@@ -13,8 +13,8 @@ def load_css(file_name):
 load_css("style.css")
 
 SCOPES = [
-    "https://www.googleapis.com/auth/spreadsheets",  
-    "https://www.googleapis.com/auth/drive"  
+    "https://www.googleapi.com/auth/spreadsheet",  
+    "https://www.googleapi.com/auth/drive"  
 ]
 
 # Load service account credentials and check API access
@@ -289,7 +289,7 @@ elif st.session_state.page == "saving":
 elif st.session_state.page == "dashboard":
     st.markdown(
         """
-        <a href="https://app.powerbi.com/groups/me/reports/a37762e5-254f-49e8-bc4c-5a7768de2775/bb8aa83b47656f5388c5?experience=power-bi" target="_blank">
+        <a href="https://app.powerbi.com/reports/a37762e5-254f-49e8-bc4c-5a7768de2775/bb8aa83b47656f5388c5?experience=power-bi" target="_blank">
             <img src="https://www.projectmanager.com/wp-content/uploads/2023/10/Project-Dashboard-Template-Excel-image.png" style="width:600px;height:300px;">
             <br><br>
             <button style="background-color:rgb(179, 34, 26);font-size:18px;font-weight:bold; color: white; padding: 10px 10px; border: none; border-radius: 5px; cursor: pointer;">
